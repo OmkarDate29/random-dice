@@ -16,9 +16,9 @@ body {
 h1 {
   margin: 30px;
   font-family: 'Lobster', cursive;
+  color: #4ECCA3;
   text-shadow: 5px 0 #232931;
   font-size: 8rem;
-  color: #4ECCA3;
 }
 
 p {
@@ -29,4 +29,23 @@ p {
 
 img {
   width: 80%;
+}
+
+#suffle-btn {
+  display: block;
+  margin: 30px auto;
+  font-size: 40px;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  font-family: 'Indie Flower', cursive;
+  color: #4ECCA3;
+  background-color: #282d32;
+  cursor: pointer;
+  padding: 4px 20px;
+}
+
+#suffle-btn:hover {
+  background-color: #2d3136;
+  transform: translate(-5px, -3px);
 }

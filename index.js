@@ -1,18 +1,18 @@
-var r1 = Math.floor(Math.random() * 6) + 1;
-var r2 = Math.floor(Math.random() * 6) + 1;
+document.getElementById("suffle-btn").addEventListener("click", () => {
+  var r1 = Math.floor(Math.random() * 6) + 1;
+  var r2 = Math.floor(Math.random() * 6) + 1;
 
-changeImage(r1, ".img1");
-changeImage(r2, ".img2");
+  changeImage(r1, ".img1");
+  changeImage(r2, ".img2");
 
-if (r1 > r2) {
-  document.querySelector("h1").textContent = "Player 1 Win";
-} else if (r1 < r2) {
-  document.querySelector("h1").textContent = "Player 2 Win";
-} else {
-  document.querySelector("h1").textContent = "Refresh Me";
-}
-
-console.log(r1 + " " + r2);
+  if (r1 > r2) {
+    document.querySelector("h1").textContent = "Player 1 Win";
+  } else if (r1 < r2) {
+    document.querySelector("h1").textContent = "Player 2 Win";
+  } else {
+    document.querySelector("h1").textContent = "Draw";
+  }
+});
 
 function changeImage(randomValue, className) {
   if (randomValue == 1) {
